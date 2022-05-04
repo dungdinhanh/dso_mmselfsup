@@ -13,7 +13,6 @@
 
 The work is to provide a knowledge distillation scheme for self-supervised learning. This aims to solve one fact that the self-supervised scheme works very well for large networks such as Resnet 50, yet the performance is unexepectedly lower in small networks such as Mobilenet-v2 and Resnet18
 
-The code is developed from the [MMselfsup](https://github.com/open-mmlab/mmselfsup). MMSelfSup is an open source self-supervised representation learning toolbox based on PyTorch. It is a part of the [OpenMMLab](https://openmmlab.com/) project.
 
 The master branch works with **PyTorch 1.5** or higher.
 
@@ -106,32 +105,13 @@ We also provides tutorials for more details:
 - [customize runtime](docs/tutorials/5_runtime.md)
 - [benchmarks](docs/tutorials/6_benchmarks.md)
 
-## Citation
-
-If you use this toolbox or benchmark in your research, please cite this project.
-
-```bibteX
-@misc{mmselfsup2021,
-    title={{MMSelfSup}: OpenMMLab Self-Supervised Learning Toolbox and Benchmark},
-    author={MMSelfSup Contributors},
-    howpublished={\url{https://github.com/open-mmlab/mmselfsup}},
-    year={2021}
-}
-```
-
-## Contributing
-
-We appreciate all contributions improving MMSelfSup. Please refer to [CONTRIBUTING.md](docs/community/CONTRIBUTING.md) for more details about the contributing guideline.
-
 ## Acknowledgement
 
 Remarks:
 
-- MMSelfSup originates from OpenSelfSup, and we appreciate all early contributions made to OpenSelfSup. A few contributors are listed here: Xiaohang Zhan, Jiahao Xie, Enze Xie, Xiangxiang Chu, Zijian He.
-- The implementation of MoCo and the detection benchmark borrow the code from [MoCo](https://github.com/facebookresearch/moco).
-- The implementation of SwAV borrows the code from [SwAV](https://github.com/facebookresearch/swav).
-- The SVM benchmark borrows the code from [fair_self_supervision_benchmark](https://github.com/facebookresearch/fair_self_supervision_benchmark).
-- `mmselfsup/utils/clustering.py` is borrowed from [deepcluster](https://github.com/facebookresearch/deepcluster/blob/master/clustering.py).
+The code is developed from the [MMselfsup](https://github.com/open-mmlab/mmselfsup). 
+
+MMSelfSup is an open source self-supervised representation learning toolbox based on PyTorch. It is a part of the [OpenMMLab](https://openmmlab.com/) project.
 
 ## Projects in OpenMMLab
 

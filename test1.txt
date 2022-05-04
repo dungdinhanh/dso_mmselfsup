@@ -1,0 +1,413 @@
+/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/launch.py:163: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(
+The module torch.distributed.launch is deprecated and going to be removed in future.Migrate to torch.distributed.run
+WARNING:torch.distributed.run:--use_env is deprecated and will be removed in future releases.
+ Please read local_rank from `os.environ('LOCAL_RANK')` instead.
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : tools/train_kd.py
+  min_nodes        : 1
+  max_nodes        : 1
+  nproc_per_node   : 4
+  run_id           : none
+  rdzv_backend     : static
+  rdzv_endpoint    : 127.0.0.1:29503
+  rdzv_configs     : {'rank': 0, 'timeout': 900}
+  max_restarts     : 3
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_ti707un6/none_qw6urzhn
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python3.8
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/elastic/utils/store.py:52: FutureWarning: This is an experimental API and will be changed in future.
+  warnings.warn(
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=127.0.0.1
+  master_port=29503
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_0/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_0/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_0/3/error.json
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 64) of binary: /home/users/thibaongoc_nguyen/.conda/envs/openss/bin/python3.8
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:[default] Worker group FAILED. 3/3 attempts left; will restart worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Stopping worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=1
+  master_addr=127.0.0.1
+  master_port=29503
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_1/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_1/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_1/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_1/3/error.json
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 180) of binary: /home/users/thibaongoc_nguyen/.conda/envs/openss/bin/python3.8
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:[default] Worker group FAILED. 2/3 attempts left; will restart worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Stopping worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=2
+  master_addr=127.0.0.1
+  master_port=29503
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_2/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_2/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_2/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_2/3/error.json
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 296) of binary: /home/users/thibaongoc_nguyen/.conda/envs/openss/bin/python3.8
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:[default] Worker group FAILED. 1/3 attempts left; will restart worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Stopping worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=3
+  master_addr=127.0.0.1
+  master_port=29503
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_3/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_3/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_3/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_ti707un6/none_qw6urzhn/attempt_3/3/error.json
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Traceback (most recent call last):
+  File "tools/train_kd.py", line 15, in <module>
+    from mmselfsup.apis import init_random_seed, set_random_seed, train_model, train_model_kd
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/__init__.py", line 2, in <module>
+    from .train import init_random_seed, set_random_seed, train_model, train_model_kd, train_model_kd_readlogmin
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/apis/train.py", line 12, in <module>
+    from mmselfsup.core import (DistOptimizerHook, GradAccumFp16OptimizerHook,
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/__init__.py", line 4, in <module>
+    from .crunner import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/__init__.py", line 3, in <module>
+    from .kd_based_runner_readiter import *
+  File "/home/users/thibaongoc_nguyen/dung/mmselfsup/mmselfsup/core/crunner/kd_based_runner_readiter.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 412) of binary: /home/users/thibaongoc_nguyen/.conda/envs/openss/bin/python3.8
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:Local worker group finished (FAILED). Waiting 300 seconds for other agents to finish
+/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/elastic/utils/store.py:70: FutureWarning: This is an experimental API and will be changed in future.
+  warnings.warn(
+INFO:torch.distributed.elastic.agent.server.api:Done waiting for other agents. Elapsed: 0.00039839744567871094 seconds
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 0, "group_rank": 0, "worker_id": "412", "role": "default", "hostname": "SUTD-hpc-gn2", "state": "FAILED", "total_run_time": 40, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python3.8\", \"local_rank\": [0], \"role_rank\": [0], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 1, "group_rank": 0, "worker_id": "413", "role": "default", "hostname": "SUTD-hpc-gn2", "state": "FAILED", "total_run_time": 40, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python3.8\", \"local_rank\": [1], \"role_rank\": [1], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 2, "group_rank": 0, "worker_id": "414", "role": "default", "hostname": "SUTD-hpc-gn2", "state": "FAILED", "total_run_time": 40, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python3.8\", \"local_rank\": [2], \"role_rank\": [2], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 3, "group_rank": 0, "worker_id": "415", "role": "default", "hostname": "SUTD-hpc-gn2", "state": "FAILED", "total_run_time": 40, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python3.8\", \"local_rank\": [3], \"role_rank\": [3], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.SUCCEEDED", "source": "AGENT", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": null, "group_rank": 0, "worker_id": null, "role": "default", "hostname": "SUTD-hpc-gn2", "state": "SUCCEEDED", "total_run_time": 40, "rdzv_backend": "static", "raw_error": null, "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python3.8\"}", "agent_restarts": 3}}
+/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py:354: UserWarning: 
+
+**********************************************************************
+               CHILD PROCESS FAILED WITH NO ERROR_FILE                
+**********************************************************************
+CHILD PROCESS FAILED WITH NO ERROR_FILE
+Child process 412 (local_rank 0) FAILED (exitcode 1)
+Error msg: Process failed with exitcode 1
+Without writing an error file to <N/A>.
+While this DOES NOT affect the correctness of your application,
+no trace information about the error will be available for inspection.
+Consider decorating your top level entrypoint function with
+torch.distributed.elastic.multiprocessing.errors.record. Example:
+
+  from torch.distributed.elastic.multiprocessing.errors import record
+
+  @record
+  def trainer_main(args):
+     # do train
+**********************************************************************
+  warnings.warn(_no_error_file_warning_msg(rank, failure))
+Traceback (most recent call last):
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/runpy.py", line 192, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/launch.py", line 173, in <module>
+    main()
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/launch.py", line 169, in main
+    run(args)
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/run.py", line 621, in run
+    elastic_launch(
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 116, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/home/users/thibaongoc_nguyen/.conda/envs/openss/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 245, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+***************************************
+        tools/train_kd.py FAILED       
+=======================================
+Root Cause:
+[0]:
+  time: 2022-03-04_13:58:55
+  rank: 0 (local_rank: 0)
+  exitcode: 1 (pid: 412)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+=======================================
+Other Failures:
+[1]:
+  time: 2022-03-04_13:58:55
+  rank: 1 (local_rank: 1)
+  exitcode: 1 (pid: 413)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+[2]:
+  time: 2022-03-04_13:58:55
+  rank: 2 (local_rank: 2)
+  exitcode: 1 (pid: 414)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+[3]:
+  time: 2022-03-04_13:58:55
+  rank: 3 (local_rank: 3)
+  exitcode: 1 (pid: 415)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+***************************************
+

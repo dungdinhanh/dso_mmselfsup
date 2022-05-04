@@ -39,20 +39,13 @@ The master branch works with **PyTorch 1.5** or higher.
 
 This project is released under the [Apache 2.0 license](LICENSE).
 
-## ChangeLog
-
-MMSelfSup **v0.5.0** was released with refactor in 16/12/2021.
-
-Please refer to [changelog.md](docs/changelog.md) for details and release history.
-
-Differences between MMSelfSup and OpenSelfSup codebases can be found in [compatibility.md](docs/compatibility.md).
 
 ## Model Zoo and Benchmark
 
 ### Model Zoo
 Please refer to [model_zoo.md](docs/model_zoo.md) for a comprehensive set of pre-trained models and benchmarks.
 
-Supported algorithms:
+Supported algorithms from MMSelfsup: 
 
 - [x] [Relative Location (ICCV'2015)](https://arxiv.org/abs/1505.05192)
 - [x] [Rotation Prediction (ICLR'2018)](https://arxiv.org/abs/1803.07728)
@@ -67,7 +60,14 @@ Supported algorithms:
 - [x] [DenseCL (CVPR'2021)](https://arxiv.org/abs/2011.09157)
 - [x] [SimSiam (CVPR'2021)](https://arxiv.org/abs/2011.10566)
 
-More algorithms are in our plan.
+Other algorithms developed by us:
+
+- [x] [SimDis (arxiv)](https://arxiv.org/pdf/2106.11304.pdf)
+- [x] [NegKD]()
+- [x] [PosKD]()
+- [x] [PosNegKD]()
+- [x] [SimDisPosKD]()
+- [x] [SimDisNegKD]()
 
 ### Benchmark
 
@@ -87,7 +87,11 @@ More algorithms are in our plan.
 
 ## Installation
 
-Please refer to [install.md](docs/install.md) for installation and [prepare_data.md](docs/prepare_data.md) for dataset preparation.
+run `bash scripts/setup.sh` for installation. Remember to create a virtual env first before installing (venv or virtualenv)
+
+## Data preparation 
+
+[prepare_data.md](docs/prepare_data.md) for dataset preparation.
 
 ## Get Started
 

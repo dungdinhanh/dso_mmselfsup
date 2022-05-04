@@ -26,3 +26,25 @@ eval ${cmd}
 cmd="pip install mmsegmentation mmdet"
 echo ${cmd}
 eval ${cmd}
+
+cmd="pip install opencv-python-headless"
+echo ${cmd}
+eval ${cmd}
+
+cmd="pip install  mmcv==1.4.0"
+echo ${cmd}
+eval ${cmd}
+
+
+cmd="pip install  mmsegmentation mmdet"
+echo ${cmd}
+eval ${cmd}
+
+cmd="pip install pandas"
+echo ${cmd}
+eval ${cmd}
+
+
+cmd="pip install lpips"
+echo ${cmd}
+eval ${cmd}

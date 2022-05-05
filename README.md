@@ -61,12 +61,14 @@ Supported algorithms from MMSelfsup:
 
 Other algorithms developed by us:
 
-- [x] [SimDis (arxiv)](https://arxiv.org/pdf/2106.11304.pdf)
+- [x] [SimDis for SimSiam (arxiv)](https://arxiv.org/pdf/2106.11304.pdf)
 - [x] [NegKD]()
 - [x] [PosKD]()
 - [x] [PosNegKD]()
 - [x] [SimDisPosKD]()
 - [x] [SimDisNegKD]()
+
+Please refers to this [doc](docs/models_kd.md) to see more. 
 
 ### Benchmark
 
@@ -94,9 +96,9 @@ run `bash scripts/setup.sh` for installation. Remember to create a virtual env f
 
 ## Get Started
 
-Please see [getting_started.md](docs/getting_started.md) for the basic usage of MMSelfSup.
+Please see [getting_started.md](docs/getting_started.md) for the basic usage of the project.
 
-We also provides tutorials for more details:
+Refer to MMselfsup docs for more guidances:
 - [config](docs/tutorials/0_config.md)
 - [add new dataset](docs/tutorials/1_new_dataset.md)
 - [data pipeline](docs/tutorials/2_data_pipeline.md)

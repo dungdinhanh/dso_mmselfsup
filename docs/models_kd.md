@@ -11,6 +11,10 @@
 
 ## SimDis for SimSiam
 
-This is the modiefied version of the SimDis for SimSiam instead of BYOL as in the [original paper](https://arxiv.org/pdf/2106.11304.pdf)
+This is the modified version of the SimDis for [SimSiam](algorithms/ss.md) instead of BYOL as in the [original paper](https://arxiv.org/pdf/2106.11304.pdf)
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
+
+The main idea of the SimDis work is to match the views of students to teachers.
+The loss is provided as: <img src="https://render.githubusercontent.com/render/math?math= L = 1/2 D(p^T_1, p^S_1) + 1/2 D(p^T_2, p^S_2)">
+In order to provid 

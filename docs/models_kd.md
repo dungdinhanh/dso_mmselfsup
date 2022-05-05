@@ -22,7 +22,7 @@ Where <img src="https://render.githubusercontent.com/render/math?math=D, p^T_1, 
 
 <div align="center">
 <figure>
-    <img src="../resources/DSO/report3/view1.png" style="width:60%"\><\br>  
+    <img src="../resources/DSO/report3/view1.png" style="width:60%"\><br>  
      <figcaption align = "center"><b>SimDisSiam model</b></figcaption>
 </figure>
 </div>

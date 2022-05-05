@@ -16,5 +16,5 @@ This is the modified version of the SimDis for [SimSiam](algorithms/ss.md) inste
 
 
 The main idea of the SimDis work is to match the views of students to teachers.
-The loss is provided as: <img src="https://render.githubusercontent.com/render/math?math= L = 1/2 D(p^T_1, p^S_1) + 1/2 D(p^T_2, p^S_2)">
+The loss is provided as: <img src="https://render.githubusercontent.com/render/math?math=L = \frac{1}{2} D(p^T_1, p^S_1)+ \frac{1}{2} D(p^T_2, p^S_2)">
 In order to provid 

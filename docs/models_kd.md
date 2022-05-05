@@ -24,5 +24,9 @@ Where <img src="https://render.githubusercontent.com/render/math?math=D, p^T_1, 
 <figcaption align = "center"><b>Fig.1 - 4K Mountains Wallpaper</b></figcaption>
 </figure>
 
+<div align="center">
+    <img src="../resources/DSO/report3/view1.png" width="500"/>
+</div>
+
 
 The image 

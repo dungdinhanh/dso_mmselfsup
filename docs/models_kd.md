@@ -19,13 +19,27 @@ The main idea of the SimDis work is to match the views of students to teachers.
 The loss is provided as: <img src="https://render.githubusercontent.com/render/math?math=L = \frac{1}{2} D(p^T_1, p^S_1) %2b  \frac{1}{2} D(p^T_2, p^S_2)">
 Where <img src="https://render.githubusercontent.com/render/math?math=D, p^T_1, p^T_2, p^S_1, p^S_2"> are cosine similarity, first view, second view prediction of teacher and student respectively.
 
+Fig.1 shows the paradigm of the SimDisSiam where the predictions of students are matched with the predictions of teacher
+correspondingly.
 
 <div align="center">
 <figure>
     <img src="../resources/DSO/report3/view1.png" style="width:60%"\><br>  
-     <figcaption align = "center"><b>SimDisSiam model</b></figcaption>
+     <figcaption align = "center">Fig.1 <b>SimDisSiam model</b>: Matching between views of students
+     and teacher</figcaption>
 </figure>
 </div>
 
+In order to run the SimDisSiam code, there are several steps
 
-The image 
+First step is to train the SimDisSiam model by running the following code:
+
+``bash tools/dist_train_kd.sh configs/simdis_resnet18_4xb64-coslr-200e_in30p.py 4``
+
+The above code is set for training self-supervised SimDis for Resnet on ImageNet30% with 4 GPUs. To make changes to the number of GPUs,
+please refer the [README.md](../README.md) with original guidances from OpenMMselfsup to change the configs.
+
+Second step is to extract the backbon of the self-supervised model via command;
+
+``python tools/model_converters/extract_backbone_weight.py work_dirs/``
+

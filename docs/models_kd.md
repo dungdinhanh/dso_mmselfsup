@@ -22,9 +22,8 @@ Where <img src="https://render.githubusercontent.com/render/math?math=D, p^T_1, 
 
 <div align="center">
 <figure>
-    <img src="../resources/DSO/report3/view1.png" style="width:60%">
-       
-    <figcaption align = "center"><b>Fig.1 - 4K Mountains Wallpaper</b></figcaption>
+    <img src="../resources/DSO/report3/view1.png" style="width:60%"\>   
+     <figcaption align = "center"><b>Fig.1 - 4K Mountains Wallpaper</b></figcaption>
 </figure>
 </div>
 

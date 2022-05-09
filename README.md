@@ -62,8 +62,8 @@ Supported algorithms from MMSelfsup:
 Other algorithms developed by us:
 
 - [x] [SimDis for SimSiam (arxiv)](https://arxiv.org/pdf/2106.11304.pdf)
-- [x] [NegKD]()
-- [x] [PosKD]()
+- [x] [NegKD](docs/neg_kd.md)
+- [x] [PosKD](docs/pos_kd.md)
 - [x] [PosNegKD]()
 - [x] [SimDisPosKD]()
 - [x] [SimDisNegKD]()

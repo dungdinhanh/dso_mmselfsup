@@ -32,21 +32,28 @@ correspondingly.
 
 In order to run the SimDisSiam code, there are several steps
 
-First step is to train the SimDisSiam model by running the following code:
+<b>First step<\b> is to train the SimDisSiam model by running the following code:
 
 ``bash tools/dist_train_kd.sh configs/selfsup/simdis/simdis_resnet18_4xb64-coslr-200e_in30p.py 4``
 
 The above code is set for training self-supervised SimDis for Resnet on ImageNet30% with 4 GPUs. To make changes to the number of GPUs,
 please refer the [README.md](../README.md) with original guidances from OpenMMselfsup to change the configs.
 
-Second step is to extract the backbon of the self-supervised model via command;
+<b>Second step<\b> is to extract the backbone of the self-supervised model via command;
 
 ``python tools/model_converters/extract_backbone_weight.py work_dirs/selfsup/simdis/simdis_resnet18_4xb64-coslr-200e_in30p/latest.pth
 work_dirs/selfsup/simdis/simdis_resnet18_4xb64-coslr-200e_in30p/backbone_simdissiam.pth``
 
 (Remember to change the path if the config is changed)
 
+<b>Third step<\b> is to evaluate the performance of the self-supervised mode via command:
 
+``bash tools/benchmark/classification/dist_train_linear.sh configs/benchmarks/classification/imagenet/resnet18_2xb128-stelr-100e_in1k.py
+ work_dirs/selfsup/simdis/simdis_resnet18_4xb64-coslr-200e_in30p/backbone_simdissiam.pth``
+ 
+
+ 
+ 
 
 
 

@@ -31,7 +31,8 @@ The master branch works with **PyTorch 1.5** or higher.
 
 - **Compatibility**
 
-  Since MMSelfSup adopts similar design of modulars and interfaces as those in other OpenMMLab projects, it supports smooth evaluation on downstream tasks with other OpenMMLab projects like object detection and segmentation.
+  Since MMSelfSup adopts similar design of modulars and interfaces as those in other OpenMMLab projects, this project
+   supports smooth evaluation on downstream tasks with other OpenMMLab projects like object detection and segmentation.
 
 
 ## License
@@ -61,7 +62,7 @@ Supported algorithms from MMSelfsup:
 
 Other algorithms developed by us:
 
-- [x] [SimDis for SimSiam (arxiv)](https://arxiv.org/pdf/2106.11304.pdf)
+- [x] [SimDis for SimSiam (arxiv)](docs/simdis_kd.md)
 - [x] [NegKD](docs/neg_kd.md)
 - [x] [PosKD](docs/pos_kd.md)
 - [x] [PosNegKD]()

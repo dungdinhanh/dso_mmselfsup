@@ -9,11 +9,12 @@
 
 </div>
 
-## PosKD
+## NegKD
 
-Positive KD (PosKD) is a novel method developed totally by our research team where instead of matching views, we match the loss of student with the teacher.
+Negative KD (PosKD) is a novel method developed totally by our research team where instead of matching views, we match the loss of student with the teacher.
 
-We name the method as Positive KD to distinguish with the Negative KD where the relationships between different instances are employed to improve the performance
+We name the method as Negative KD to distinguish with the Positive KD where the loss given by the students is matched with the loss of teacher on two different views of one images.
+In NegKD, we model the relationships between different instances by matching the cosine similarity obtained by students and teachers on two different images.
 
 The loss is provided as: <img src="https://render.githubusercontent.com/render/math?math=L = \frac{1}{2} ||D(p^T_1, z^T_2) - D(p^S_1, z^S_2)|| %2b  \frac{1}{2}||D(p^T_2, z^T_1) - D(p^S_2, z^S_1)||">
 Where <img src="https://render.githubusercontent.com/render/math?math=D, p^T_1, p^T_2, p^S_1, p^S_2"> are cosine similarity, first view, second view prediction of teacher and student respectively,

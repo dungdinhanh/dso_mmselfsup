@@ -48,7 +48,7 @@ work_dirs/selfsup/simdis/simdis_resnet18_4xb64-coslr-200e_in30p/backbone_simdiss
 
 **Third step** is to evaluate the performance of the self-supervised mode via command:
 
-``bash tools/benchmark/classification/dist_train_linear.sh configs/benchmarks/classification/imagenet/resnet18_2xb128-stelr-100e_in1k.py
+``bash tools/benchmark/classification/dist_train_linear.sh configs/benchmarks/classification/imagenet/resnet18_2xb128-steplr-100e_in1k.py
  work_dirs/selfsup/simdis/simdis_resnet18_4xb64-coslr-200e_in30p/backbone_simdissiam.pth``
  
 

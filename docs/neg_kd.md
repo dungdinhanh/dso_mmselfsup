@@ -11,29 +11,29 @@
 
 ## NegKD
 
-Negative KD (PosKD) is a novel method developed totally by our research team where instead of matching views, we match the loss of student with the teacher.
+Negative KD (NegKD) is a novel method developed totally by our research team where instead of matching views, we match the loss of student with the teacher.
 
 We name the method as Negative KD to distinguish with the Positive KD where the loss given by the students is matched with the loss of teacher on two different views of one images.
 In NegKD, we model the relationships between different instances by matching the cosine similarity obtained by students and teachers on two different images.
 
 The loss is provided as: <img src="https://render.githubusercontent.com/render/math?math=L = \frac{1}{2} ||D(p^T_1, z^T_2) - D(p^S_1, z^S_2)|| %2b  \frac{1}{2}||D(p^T_2, z^T_1) - D(p^S_2, z^S_1)||">
-Where <img src="https://render.githubusercontent.com/render/math?math=D, p^T_1, p^T_2, p^S_1, p^S_2"> are cosine similarity, first view, second view prediction of teacher and student respectively,
-and <img src="https://render.githubusercontent.com/render/math?math=z^T_1, z^T_2, z^S_1, z^S_2"> are first view, second view projection of teacher and student respectively.
+Where <img src="https://render.githubusercontent.com/render/math?math=D, p^T_1, p^T_2, p^S_1, p^S_2"> are cosine similarity, first image, second image prediction of teacher and student respectively,
+and <img src="https://render.githubusercontent.com/render/math?math=z^T_1, z^T_2, z^S_1, z^S_2"> are first image, second image projection of teacher and student respectively.
 
-Fig.2 shows the paradigm of the PosKD where the SimSiam loss of students are matched with the loss of teacher
+Fig.3 shows the paradigm of the NegKD where the SimSiam loss of students are matched with the loss of teacher
 correspondingly.
 
 <div align="center">
 <figure>
-    <img src="../resources/DSO/report1/simsiam_teacher.png" style="width:60%"\><br>  
-     <figcaption align = "center">Fig.2 <b>PoSKD model</b>: Matching between losses of student
-     and teacher. The Cyan line losses will match with each others, and the red line losses will match with each others.</figcaption>
+    <img src="../resources/DSO/report1/simsiam_teacher_neg.png" style="width:60%"\><br>  
+     <figcaption align = "center">Fig.3 <b>NegKD model</b>: Matching between losses of student
+     and teacher on different images. The Cyan line losses will match with each others, and the red line losses will match with each others.</figcaption>
 </figure>
 </div>
 
-In order to run the SimDisSiam code, there are several steps
+In order to run the NegKD code, there are several steps
 
-**First step** is to train the SimDisSiam model by running the following code:
+**First step** is to train the NegKD model by running the following code:
 
 ``bash tools/dist_train_kd.sh configs/selfsup/simsiam_kd/simsiamkd_olmh_resnet18_4xb64-coslr-200e_in30p.py 4``
 

@@ -30,9 +30,9 @@ correspondingly.
 </figure>
 </div>
 
-In order to run the SimDisSiam code, there are several steps
+In order to run the PosKD code, there are several steps
 
-**First step** is to train the SimDisSiam model by running the following code:
+**First step** is to train the PosKD model by running the following code:
 
 ``bash tools/dist_train_kd.sh configs/selfsup/simsiam_kd/simsiamkd_olmh_resnet18_4xb64-coslr-200e_in30p.py 4``
 
